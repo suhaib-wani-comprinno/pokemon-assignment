@@ -1,0 +1,15 @@
+<div class="container">
+    <button (click)="generateNewPokemon()" class="btn btn-primary btn-lg mt-5 margin">Find New Pokemon</button>
+    <div class="d-flex justify-content-between">
+        <div class="card text-center" *ngFor = "let pokeName of pokeNames; let i = index">
+            <img [src]="pokeImages[i]" alt="">
+            <p>{{pokeName | uppercase }}</p>
+            <button (click)="catch(pokeName)" class="btn pokeball">
+                <img src="../../assets/pokeball-transparent-png-2.png" alt="" class="pokeball-img">
+            </button>
+            <p 
+            *ngIf="maxError"
+            class="error text-danger">{{maximumErrorMessage}}</p>
+        </div>
+    </div>
+</div>

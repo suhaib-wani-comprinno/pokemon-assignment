@@ -1,0 +1,13 @@
+<div class="center-items">
+    <div class="container">
+        <h1 class="display-5 text-center">Welcome Young Trainer</h1>
+        <div class="form-control">
+            <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                <label for="Username" class="form-label fs-4">Tell me your name</label>
+                <input type="text" formControlName="usernameInput" class="form-control mb-3">
+                <button class="btn btn-outline-warning mb-3">Sign Up</button>
+            </form>
+            <a routerLink="">Already registered? Sign In!</a>
+        </div>
+    </div>
+</div>

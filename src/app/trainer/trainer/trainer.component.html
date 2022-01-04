@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="display-3">User: {{User | titlecase}}</h1>
+    <p class="display-6 margin">Pokemons caught: {{PokeNames.length}}</p>
+    <div class="container d-flex">
+        <div *ngFor="let pokeName of PokeNames; let i = index" class="card mx-3 text-center">
+            <img [src]="temp[i]" alt="">
+            <p> {{pokeName | uppercase}}</p>
+        </div>
+    </div>
+</div>

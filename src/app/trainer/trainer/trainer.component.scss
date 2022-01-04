@@ -1,0 +1,16 @@
+img{
+    max-width : 250px;
+}
+
+.card{
+    width : 250px;
+}
+
+.card:hover{
+    transform : scale(1.2);
+    cursor : pointer;
+}
+
+.margin{
+    margin-bottom : 2rem;
+}

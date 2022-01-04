@@ -1,0 +1,45 @@
+.container{
+    max-width : 90%;
+}
+
+img{
+    max-width: 200px;
+}
+
+.card{
+    height : 400px;
+    background-color : hsl(0, 0, 98%);
+    box-shadow : 0 5px 5px rgba(0, 0, 0, 0.2);
+    width : 250px;
+}
+
+.card:hover{
+    transform : scale(1.25);
+    box-shadow : 3px 8px 10px rgba(0, 0, 0, 0.2);
+    border-bottom : 4px solid red;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    margin-inline : 1rem;
+}
+
+.pokeball{
+    margin-inline : auto;
+    max-width : 70px;
+}
+
+.pokeball:hover{
+    border : 3px solid red;
+    transform : scale(1.1)
+}
+
+.pokeball-img{
+    max-width : 50px;
+}
+
+.margin{
+    margin-bottom : 4rem;
+}
+
+.error{
+    font-size : 12px;
+}
